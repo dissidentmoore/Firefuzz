@@ -1,0 +1,20 @@
+{
+
+  "manifest_version": 2,
+  "name": "Firefuzz",
+  "version": "0.1",
+
+  "description": "Automated web application fuzzing",
+
+  "icons": {
+    "48": "icons/fuzz.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["fuzz.js"]
+    }
+  ]
+
+}
